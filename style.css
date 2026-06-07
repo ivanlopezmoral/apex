@@ -463,6 +463,10 @@ body.dark .hero-overlay{
 
     font-weight:800;
 }
+    body.dark .hero h2{
+
+    color:white;
+}
 
 .hero p{
 
