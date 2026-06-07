@@ -457,12 +457,11 @@ body.dark .hero-overlay{
 
     font-size:3rem;
 
-    color:white;
+    color:#111827;
 
     margin-top:10px;
 
-    text-shadow:
-    0 5px 20px rgba(0,0,0,.2);
+    font-weight:800;
 }
 
 .hero p{
