@@ -4,12 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>APEX | Del Simulador a la Pista</title>
 
     <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
 </head>
 
@@ -17,142 +19,351 @@
 
     <div class="cursor"></div>
 
+    <!-- NAVBAR -->
+
     <nav class="navbar glass">
-        <div class="logo">APEX</div>
+
+        <div class="logo">
+            APEX
+        </div>
 
         <ul>
+            <li><a href="#academia">Academia</a></li>
             <li><a href="#simuladores">Simuladores</a></li>
-            <li><a href="#eventos">Eventos</a></li>
-            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#progreso">Progreso</a></li>
+            <li><a href="#inscripcion">Inscripción</a></li>
         </ul>
+
+        <button id="themeToggle" class="theme-btn">
+            🌙
+        </button>
+
     </nav>
+
+    <!-- HERO -->
 
     <section class="hero">
 
-        <video autoplay muted loop playsinline>
-            <source src="https://cdn.coverr.co/videos/coverr-racing-car-on-track-1568/1080p.mp4"
-                type="video/mp4">
-        </video>
+        <div class="hero-bg"></div>
 
-        <div class="overlay"></div>
+        <div class="hero-content">
 
-        <div class="hero-content reveal">
+            <span class="hero-tag">
+                ACADEMIA DE E-SIM RACING
+            </span>
 
-            <span>SIM RACING EXPERIENCE</span>
+            <h1>
+                APEX
+            </h1>
 
-            <h1>APEX</h1>
-
-            <h2>DEL SIMULADOR A LA PISTA</h2>
+            <h2>
+                DEL SIMULADOR<br>
+                A LA PISTA
+            </h2>
 
             <p>
-                La experiencia definitiva de simulación para quienes buscan competir al máximo nivel.
+                Formamos pilotos mediante tecnología,
+                entrenamiento profesional y competición
+                de alto rendimiento.
             </p>
 
-            <a href="#" class="cta glass">
-                Inscribite ya
+            <div class="hero-buttons">
+
+                <a href="#inscripcion" class="cta-primary glass">
+                    INSCRIBITE YA
+                </a>
+
+                <a href="#academia" class="cta-secondary">
+                    EXPLORAR
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="hero-image glass">
+
+            <img
+                src="https://images.unsplash.com/photo-1544829099-b9a0c5303bea?q=80&w=1400"
+                alt="Sim Racing">
+
+            <div class="hero-card glass">
+
+                <h3>+1500</h3>
+                <p>Pilotos entrenados</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ACADEMIA -->
+
+    <section id="academia" class="section reveal">
+
+        <div class="glass large-card">
+
+            <h2>
+                No enseñamos a jugar.
+            </h2>
+
+            <h3>
+                Formamos pilotos.
+            </h3>
+
+            <p>
+                En APEX desarrollamos habilidades reales
+                de conducción mediante simulación avanzada,
+                análisis de rendimiento, telemetría y
+                entrenamiento competitivo.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- PROGRESO -->
+
+    <section id="progreso" class="section reveal">
+
+        <h2 class="section-title">
+            Tu camino en APEX
+        </h2>
+
+        <div class="timeline">
+
+            <div class="timeline-item glass">
+                <span>01</span>
+                <h3>Primer contacto</h3>
+                <p>Conocé los fundamentos.</p>
+            </div>
+
+            <div class="timeline-item glass">
+                <span>02</span>
+                <h3>Entrenamiento</h3>
+                <p>Aprendé técnicas avanzadas.</p>
+            </div>
+
+            <div class="timeline-item glass">
+                <span>03</span>
+                <h3>Competición</h3>
+                <p>Participá en torneos.</p>
+            </div>
+
+            <div class="timeline-item glass">
+                <span>04</span>
+                <h3>Piloto APEX</h3>
+                <p>Alcanzá tu máximo nivel.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SIMULADORES -->
+
+    <section id="simuladores" class="section">
+
+        <h2 class="section-title reveal">
+            Tecnología de simulación
+        </h2>
+
+        <div class="sim-grid">
+
+            <article class="sim-card glass reveal">
+
+                <img
+                    src="https://images.unsplash.com/photo-1511884642898-4c92249e20b6?q=80&w=1200"
+                    alt="GT">
+
+                <div class="sim-info">
+
+                    <h3>GT EXPERIENCE</h3>
+
+                    <p>
+                        Direct Drive, Load Cell y simulación
+                        profesional para categorías GT.
+                    </p>
+
+                </div>
+
+            </article>
+
+            <article class="sim-card glass reveal">
+
+                <img
+                    src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1200"
+                    alt="Formula">
+
+                <div class="sim-info">
+
+                    <h3>FORMULA EXPERIENCE</h3>
+
+                    <p>
+                        Entrenamiento enfocado en precisión,
+                        estrategia y rendimiento.
+                    </p>
+
+                </div>
+
+            </article>
+
+            <article class="sim-card glass reveal">
+
+                <img
+                    src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=1200"
+                    alt="Endurance">
+
+                <div class="sim-info">
+
+                    <h3>ENDURANCE LAB</h3>
+
+                    <p>
+                        Trabajo en equipo, resistencia
+                        y preparación competitiva.
+                    </p>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+    <!-- ESTADÍSTICAS -->
+
+    <section class="stats-section">
+
+        <div class="stat reveal">
+            <h2 class="counter" data-target="1500">0</h2>
+            <p>Pilotos entrenados</p>
+        </div>
+
+        <div class="stat reveal">
+            <h2 class="counter" data-target="8">0</h2>
+            <p>Simuladores</p>
+        </div>
+
+        <div class="stat reveal">
+            <h2 class="counter" data-target="42">0</h2>
+            <p>Eventos</p>
+        </div>
+
+    </section>
+
+    <!-- EVENTOS -->
+
+    <section class="section">
+
+        <h2 class="section-title reveal">
+            Próximos eventos
+        </h2>
+
+        <div class="events-row">
+
+            <div class="event glass reveal">
+                <span>JUNIO</span>
+                <h3>GT Sprint Series</h3>
+            </div>
+
+            <div class="event glass reveal">
+                <span>JULIO</span>
+                <h3>Night Cup</h3>
+            </div>
+
+            <div class="event glass reveal">
+                <span>AGOSTO</span>
+                <h3>Formula Challenge</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- INSCRIPCIÓN -->
+
+    <section id="inscripcion" class="section">
+
+        <div class="glass form-card reveal">
+
+            <h2>
+                Inscribite en APEX
+            </h2>
+
+            <form>
+
+                <input
+                    type="text"
+                    placeholder="Nombre completo">
+
+                <input
+                    type="email"
+                    placeholder="Correo electrónico">
+
+                <select>
+
+                    <option>
+                        Nivel actual
+                    </option>
+
+                    <option>
+                        Principiante
+                    </option>
+
+                    <option>
+                        Intermedio
+                    </option>
+
+                    <option>
+                        Avanzado
+                    </option>
+
+                </select>
+
+                <button type="submit">
+                    Enviar inscripción
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- CTA FINAL -->
+
+    <section class="final-cta">
+
+        <div class="glass final-card">
+
+            <h2>
+                ¿Listo para pasar
+                del simulador a la pista?
+            </h2>
+
+            <a href="#inscripcion" class="cta-primary">
+                INSCRIBITE YA
             </a>
 
         </div>
 
     </section>
 
-    <section class="stats">
+    <!-- FOOTER -->
 
-        <div class="card glass reveal">
-            <h3 class="counter" data-target="1500">0</h3>
-            <p>Pilotos entrenados</p>
-        </div>
-
-        <div class="card glass reveal">
-            <h3 class="counter" data-target="8">0</h3>
-            <p>Simuladores</p>
-        </div>
-
-        <div class="card glass reveal">
-            <h3 class="counter" data-target="42">0</h3>
-            <p>Eventos</p>
-        </div>
-
-        <div class="card glass reveal">
-            <h3 class="counter" data-target="97">0</h3>
-            <p>% Recomendación</p>
-        </div>
-
-    </section>
-
-    <section id="simuladores" class="section">
-
-        <h2 class="section-title reveal">Nuestros Simuladores</h2>
-
-        <div class="cards">
-
-            <div class="glass sim-card reveal">
-                <h3>GT PRO</h3>
-                <p>Direct Drive</p>
-                <p>Triple Monitor</p>
-                <p>Load Cell</p>
-            </div>
-
-            <div class="glass sim-card reveal">
-                <h3>FORMULA</h3>
-                <p>VR Ready</p>
-                <p>Telemetría</p>
-                <p>Coaching</p>
-            </div>
-
-            <div class="glass sim-card reveal">
-                <h3>ENDURANCE</h3>
-                <p>Eventos grupales</p>
-                <p>Resistencia</p>
-                <p>Competición</p>
-            </div>
-
-        </div>
-
-    </section>
-
-    <section id="eventos" class="section">
-
-        <h2 class="section-title reveal">Próximos Eventos</h2>
-
-        <div class="timeline">
-
-            <div class="glass event reveal">
-                <h3>Junio</h3>
-                <p>GT Sprint Series</p>
-            </div>
-
-            <div class="glass event reveal">
-                <h3>Julio</h3>
-                <p>Night Cup</p>
-            </div>
-
-            <div class="glass event reveal">
-                <h3>Agosto</h3>
-                <p>Formula Challenge</p>
-            </div>
-
-        </div>
-
-    </section>
-
-    <section class="cta-final reveal">
-
-        <h2>¿Listo para competir?</h2>
-
-        <p>DEL SIMULADOR A LA PISTA</p>
-
-        <a href="#" class="cta glass">
-            INSCRIBITE YA
-        </a>
-
-    </section>
-
-    <footer id="contacto">
+    <footer>
 
         <h3>APEX</h3>
 
-        <p>© 2026 APEX Sim Racing</p>
+        <p>
+            Del Simulador a la Pista
+        </p>
+
+        <small>
+            © 2026 APEX Sim Racing Academy
+        </small>
 
     </footer>
 
