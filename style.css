@@ -32,10 +32,11 @@ body{
 /* ===================== */
 
 .cursor{
-    width:18px;
-    height:18px;
 
-    background:var(--violet);
+    width:10px;
+    height:10px;
+
+    background:#8B5CF6;
 
     border-radius:50%;
 
@@ -51,10 +52,10 @@ body{
     transform:translate(-50%,-50%);
 
     box-shadow:
-    0 0 20px var(--violet),
-    0 0 40px var(--violet);
-}
+    0 0 8px rgba(139,92,246,.35);
 
+    opacity:.85;
+}
 /* ===================== */
 /* GLASS */
 /* ===================== */
