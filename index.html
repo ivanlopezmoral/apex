@@ -1,49 +1,163 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APEX | Del Simulador a la Pista</title>
 
-<title>APEX | Del Simulador a la Pista</title>
+    <link rel="stylesheet" href="style.css">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
 
-<div class="blur blur-1"></div>
-<div class="blur blur-2"></div>
+    <div class="cursor"></div>
 
-<section class="hero">
+    <nav class="navbar glass">
+        <div class="logo">APEX</div>
 
-    <div class="hero-content">
+        <ul>
+            <li><a href="#simuladores">Simuladores</a></li>
+            <li><a href="#eventos">Eventos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
 
-        <span class="eyebrow">SIM RACING EXPERIENCE</span>
+    <section class="hero">
 
-        <h1>APEX</h1>
+        <video autoplay muted loop playsinline>
+            <source src="https://cdn.coverr.co/videos/coverr-racing-car-on-track-1568/1080p.mp4"
+                type="video/mp4">
+        </video>
 
-        <h2>DEL SIMULADOR A LA PISTA</h2>
+        <div class="overlay"></div>
 
-        <a href="#" class="cta">
-            Inscribite ya
+        <div class="hero-content reveal">
+
+            <span>SIM RACING EXPERIENCE</span>
+
+            <h1>APEX</h1>
+
+            <h2>DEL SIMULADOR A LA PISTA</h2>
+
+            <p>
+                La experiencia definitiva de simulación para quienes buscan competir al máximo nivel.
+            </p>
+
+            <a href="#" class="cta glass">
+                Inscribite ya
+            </a>
+
+        </div>
+
+    </section>
+
+    <section class="stats">
+
+        <div class="card glass reveal">
+            <h3 class="counter" data-target="1500">0</h3>
+            <p>Pilotos entrenados</p>
+        </div>
+
+        <div class="card glass reveal">
+            <h3 class="counter" data-target="8">0</h3>
+            <p>Simuladores</p>
+        </div>
+
+        <div class="card glass reveal">
+            <h3 class="counter" data-target="42">0</h3>
+            <p>Eventos</p>
+        </div>
+
+        <div class="card glass reveal">
+            <h3 class="counter" data-target="97">0</h3>
+            <p>% Recomendación</p>
+        </div>
+
+    </section>
+
+    <section id="simuladores" class="section">
+
+        <h2 class="section-title reveal">Nuestros Simuladores</h2>
+
+        <div class="cards">
+
+            <div class="glass sim-card reveal">
+                <h3>GT PRO</h3>
+                <p>Direct Drive</p>
+                <p>Triple Monitor</p>
+                <p>Load Cell</p>
+            </div>
+
+            <div class="glass sim-card reveal">
+                <h3>FORMULA</h3>
+                <p>VR Ready</p>
+                <p>Telemetría</p>
+                <p>Coaching</p>
+            </div>
+
+            <div class="glass sim-card reveal">
+                <h3>ENDURANCE</h3>
+                <p>Eventos grupales</p>
+                <p>Resistencia</p>
+                <p>Competición</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="eventos" class="section">
+
+        <h2 class="section-title reveal">Próximos Eventos</h2>
+
+        <div class="timeline">
+
+            <div class="glass event reveal">
+                <h3>Junio</h3>
+                <p>GT Sprint Series</p>
+            </div>
+
+            <div class="glass event reveal">
+                <h3>Julio</h3>
+                <p>Night Cup</p>
+            </div>
+
+            <div class="glass event reveal">
+                <h3>Agosto</h3>
+                <p>Formula Challenge</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="cta-final reveal">
+
+        <h2>¿Listo para competir?</h2>
+
+        <p>DEL SIMULADOR A LA PISTA</p>
+
+        <a href="#" class="cta glass">
+            INSCRIBITE YA
         </a>
 
-    </div>
+    </section>
 
-    <div class="hero-image">
+    <footer id="contacto">
 
-        <img
-        src="https://images.unsplash.com/photo-1544829099-b9a0c5303bea?q=80&w=1200"
-        alt="Sim Racing">
+        <h3>APEX</h3>
 
-    </div>
+        <p>© 2026 APEX Sim Racing</p>
 
-</section>
+    </footer>
+
+    <script src="script.js"></script>
 
 </body>
+
 </html>
