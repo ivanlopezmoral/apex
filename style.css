@@ -307,12 +307,12 @@ body::after{
 
     background:
     linear-gradient(
-        rgba(255,255,255,.45),
-        rgba(255,255,255,.75)
+        rgba(0,0,0,.35),
+        rgba(0,0,0,.60)
     );
 
     z-index:2;
-}
+} 
 
 body.dark .hero-overlay{
 
@@ -384,10 +384,10 @@ body.dark .hero-overlay{
 
     font-size:2.5rem;
 
-    color:#111827;
+    color:white;
 
     font-weight:800;
-}
+} 
 
 body.dark .hero h2{
 
