@@ -349,6 +349,52 @@ body.dark .hero-overlay{
 
 }
 
+.hero-content::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:0;
+    right:0;
+
+    height:1px;
+
+    background:
+    linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,.8),
+        transparent
+    );
+
+} 
+
+.hero-content::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:300px;
+    height:300px;
+
+    background:#8B5CF6;
+
+    opacity:.15;
+
+    filter:blur(120px);
+
+    left:50%;
+    top:50%;
+
+    transform:
+    translate(-50%,-50%);
+
+    z-index:-1;
+}
+
 .hero-tag{
 
     display:inline-block;
