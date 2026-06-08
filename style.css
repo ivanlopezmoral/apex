@@ -295,9 +295,15 @@ body::after{
     height:100%;
 
     object-fit:cover;
+    object-position:center;
 
-    transform:scale(1.05);
-}
+    transform:scale(1.08);
+
+    filter:
+    brightness(.45)
+    contrast(1.1)
+    saturate(1.15);
+} 
 
 .hero-overlay{
 
@@ -307,8 +313,10 @@ body::after{
 
     background:
     linear-gradient(
-        rgba(0,0,0,.35),
-        rgba(0,0,0,.60)
+        180deg,
+        rgba(5,5,10,.25) 0%,
+        rgba(5,5,10,.55) 40%,
+        rgba(5,5,10,.80) 100%
     );
 
     z-index:2;
@@ -331,23 +339,24 @@ body.dark .hero-overlay{
 
     text-align:center;
 
-    max-width:900px;
+    max-width:950px;
 
-    padding:60px;
+    padding:70px;
 
-    background:rgba(255,255,255,.08);
+    background:
+    rgba(255,255,255,.08);
 
-    backdrop-filter:blur(30px);
-    -webkit-backdrop-filter:blur(30px);
+    backdrop-filter:blur(35px);
+    -webkit-backdrop-filter:blur(35px);
 
     border:1px solid rgba(255,255,255,.15);
 
     border-radius:40px;
 
     box-shadow:
-    0 20px 60px rgba(0,0,0,.25);
+    0 30px 80px rgba(0,0,0,.35);
 
-}
+} 
 
 .hero-content::before{
 
@@ -371,29 +380,28 @@ body.dark .hero-overlay{
 
 } 
 
-.hero-content::after{
+.hero::before{
 
     content:"";
 
     position:absolute;
 
-    width:300px;
-    height:300px;
+    width:800px;
+    height:800px;
 
     background:#8B5CF6;
 
     opacity:.15;
 
-    filter:blur(120px);
+    filter:blur(180px);
 
-    left:50%;
-    top:50%;
+    top:-250px;
+    right:-250px;
 
-    transform:
-    translate(-50%,-50%);
+    z-index:2;
 
-    z-index:-1;
-}
+    pointer-events:none;
+} 
 
 .hero-tag{
 
@@ -418,10 +426,10 @@ body.dark .hero-overlay{
 
     font-weight:900;
 
-    color:var(--primary);
+    color:white;
 
     text-shadow:
-    0 10px 30px rgba(0,0,0,.08);
+    0 10px 40px rgba(0,0,0,.4);
 }
 
 .hero h2{
@@ -432,7 +440,9 @@ body.dark .hero-overlay{
 
     color:white;
 
-    font-weight:800;
+    font-weight:700;
+
+    letter-spacing:2px;
 } 
 
 body.dark .hero h2{
@@ -450,8 +460,8 @@ body.dark .hero h2{
 
     line-height:1.8;
 
-    color:#374151;
-}
+    color:rgba(255,255,255,.85);
+} 
 
 body.dark .hero p{
 
