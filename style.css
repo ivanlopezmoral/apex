@@ -128,30 +128,7 @@ body::after{
 /* CURSOR */
 /* ========================= */
 
-.cursor{
 
-    width:10px;
-    height:10px;
-
-    border-radius:50%;
-
-    background:var(--primary);
-
-    position:fixed;
-
-    pointer-events:none;
-
-    z-index:9999;
-
-    left:0;
-    top:0;
-
-    transform:translate(-50%,-50%);
-
-    box-shadow:
-    0 0 10px rgba(139,92,246,.25);
-
-}
 
 /* ========================= */
 /* GLASS */
