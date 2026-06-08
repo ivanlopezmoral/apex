@@ -1,21 +1,4 @@
-/* ===================================== */
-/* CURSOR PREMIUM */
-/* ===================================== */
 
-const cursor = document.querySelector(".cursor");
-
-let mouseX = 0;
-let mouseY = 0;
-
-let currentX = 0;
-let currentY = 0;
-
-document.addEventListener("mousemove", (e) => {
-
-    mouseX = e.clientX;
-    mouseY = e.clientY;
-
-});
 
 function animateCursor() {
 
