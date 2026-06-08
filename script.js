@@ -1,19 +1,4 @@
 
-
-function animateCursor() {
-
-    currentX += (mouseX - currentX) * 0.15;
-    currentY += (mouseY - currentY) * 0.15;
-
-    cursor.style.left = `${currentX}px`;
-    cursor.style.top = `${currentY}px`;
-
-    requestAnimationFrame(animateCursor);
-
-}
-
-animateCursor();
-
 /* ===================================== */
 /* DARK MODE */
 /* ===================================== */
